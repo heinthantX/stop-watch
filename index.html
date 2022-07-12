@@ -29,14 +29,21 @@
           </div>
         </div>
         <div class="flex justify-around">
-          <button onclick="startClick()">
+          <button onclick="startClick()" id="start-btn">
             <img
               src="./src/images/play-button-svgrepo-com.svg"
               width="28px"
               alt="paly-buton"
             />
           </button>
-          <button onclick="stopClick()">
+          <button onclick="stopClick()" class="hidden" id="stop-btn">
+            <img
+              src="./src/images/pause-svgrepo-com (1).svg"
+              width="28px"
+              alt="pause-button"
+            />
+          </button>
+          <button onclick="restartCLick()">
             <img
               src="./src/images/power-reset-svgrepo-com.svg"
               width="28px"

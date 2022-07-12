@@ -1,12 +1,16 @@
 const sec = document.getElementById('sec');
 const min = document.getElementById('min');
 const alarm = document.getElementById('alarm');
+const startBtn = document.getElementById('start-btn');
+const stopBtn = document.getElementById('stop-btn');
 
 let count = 0;
 let intervalId;
 
 function startClick() {
   if (intervalId) return;
+  startBtn.style.display = 'none';
+  stopBtn.style.display = 'block';
   intervalId = setInterval(() => {
     count++;
     updateText(count);
@@ -17,6 +21,13 @@ function startClick() {
 }
 
 function stopClick() {
+  startBtn.style.display = 'block';
+  stopBtn.style.display = 'none';
+  clearInterval(intervalId);
+  intervalId = null;
+}
+
+function restartCLick() {
   clearInterval(intervalId);
   intervalId = null;
   count = 0;
