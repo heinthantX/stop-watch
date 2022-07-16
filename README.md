@@ -15,3 +15,11 @@ The whole template is built with
 - CSS
 - TailwindCss
 - JavaScript
+
+### Contact
+
+👤 **Hein Thant**
+
+- Github: [GitHub](https://github.com/heinthantX)
+- Twitter: [Twitter](https://twitter.com/HeinThantX_)
+- Linkedin: [Linkedin](https://www.linkedin.com/in/hein-thant-75372b245/)
