@@ -32,6 +32,8 @@ function restartCLick() {
   intervalId = null;
   count = 0;
   updateText(count);
+  startBtn.style.display = 'block';
+  stopBtn.style.display = 'none';
 }
 
 function updateText(count) {
